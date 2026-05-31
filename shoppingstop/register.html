@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="register-container">
+
+        <form class="register-form">
+            <h1>Create Account</h1>
+            <div class="input-box">
+                <label>First Name</label>
+                <input type="text"
+                       placeholder="Enter first name"
+                       required>
+            </div>
+
+            <div class="input-box">
+                <label>Last Name</label>
+
+                <input type="text"
+                       placeholder="Enter last name"
+                       required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+
+                <input type="email"
+                       placeholder="Enter email"
+                       required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+
+                <input type="tel"
+                       placeholder="Enter phone number"
+                       required>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+
+                <input type="password"
+                       placeholder="Enter password"
+                       required>
+            </div>
+
+            <div class="input-box">
+                <label>Confirm Password</label>
+
+                <input type="password"
+                       placeholder="Confirm password"
+                       required>
+            </div>
+            <div class="gender-box">
+
+                <label>
+                    <input type="radio"
+                           name="gender">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="gender">
+                    Female
+                </label>
+
+            </div>
+            <div class="checkbox">
+
+                <label>
+                    <input type="checkbox"
+                           required>
+
+                    I agree to the terms and conditions
+                </label>
+
+            </div>
+           <button type="button" class="btn" onclick="window.location.href='index.html'">REGISTER</button>
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

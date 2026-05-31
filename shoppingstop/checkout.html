@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Checkout </h1>
+
+    </header>
+
+    <section class="checkout-container">
+
+        <div class="checkout-box">
+
+            <h2>Billing Details</h2>
+
+            <form onsubmit="placeOrder(event)">
+
+                <input type="text"
+                       placeholder="Full Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Email Address"
+                       required>
+
+                <input type="text"
+                       placeholder="Phone Number"
+                       required>
+
+                <input type="text"
+                       placeholder="Address"
+                       required>
+
+                <input type="text"
+                       placeholder="City"
+                       required>
+
+                <input type="text"
+                       placeholder="ZIP Code"
+                       required>
+
+                <h3>Payment Method</h3>
+
+                <div class="payment-method">
+
+                    <label>
+                        <input type="radio"
+                               name="payment"
+                               required>
+
+                        Cash on Delivery
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="payment">
+
+                        Credit / Debit Card
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="payment">
+
+                        UPI Payment
+                    </label>
+
+                </div>
+
+                <div class="summary">
+
+                    <h2>Order Summary</h2>
+
+                    <p>iPhone 17 Pro -1</p>
+
+                    <p>HP VIctus Gaming Laptop  -1</p>
+
+                    <hr>
+
+                    <h3>Total: $2398</h3>
+
+                </div>
+
+             <button class="cart-btn"
+                        onclick="window.location.href='index.html'">
+                        Place Order
+                        </button>
+
+

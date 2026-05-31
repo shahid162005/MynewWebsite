@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Wishlist</title>
+
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>My Wishlist </h1>
+    </header>
+
+    <section class="wishlist-container">
+
+        <div class="wishlist-card">
+            <img src="iphone.webp" alt="">
+            <h2>iPhone 17 Pro</h2>
+            <p>$1,099</p>
+            <div class="buttons">
+            <button class="btn-blue" onclick="window.location.href='cart.html'">Add to Cart</button>
+
+            <button class="btn-red" onclick="this.closest('.product-card').remove()">Remove</button>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="wishlist-card">
+            <img src="hp lap.webp" alt="">
+            <h2>HP Victus Gaming Laptop</h2>
+            <p>$1,299</p>
+            <div class="buttons">
+
+            <button class="btn-blue" onclick="window.location.href='cart.html'">Add to Cart</button>
+
+            <button class="btn-red" onclick="this.closest('.product-card').remove()">Remove</button>
+
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>

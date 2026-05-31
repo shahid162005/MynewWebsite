@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Shopping Cart </h1>
+
+    </header>
+
+    <section class="cart-container">
+
+        <div class="cart-card">
+
+            <img src="iphone.webp" alt="">
+
+            <div class="cart-details">
+
+                <h2>iPhone 17 Pro</h2>
+
+                <p class="price">$1099</p>
+
+                <div class="quantity-box">
+
+                    <button onclick="decreaseQuantity('qty1','price1',$1099)">
+                        -
+                    </button>
+
+                    <span id="qty1">1</span>
+
+                    <button onclick="increaseQuantity('qty1','price1',$1099)">
+                    +
+                    </button>
+
+                </div>
+                <h3 id="price1">
+                    Total: $1099
+                </h3>
+                <button class="remove-btn"
+                        onclick="removeItem(this)">
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="cart-card">
+
+            <img src="hp lap.webp" alt="">
+
+            <div class="cart-details">
+                <h2>Hp Victus Gaming Laptop</h2>
+                <p class="price">$1299</p>
+                <div class="quantity-box">
+                    <button onclick="decreaseQuantity('qty2','price2',$1299)">
+                        -
+                    </button>
+                    <span id="qty2">1</span>
+                    <button onclick="increaseQuantity('qty2','price2',$1299)">
+                        +
+                    </button>
+                </div>
+
+                <h3 id="price2">
+                    Total: $1299
+                </h3>
+
+                <button class="remove-btn"
+                        onclick="removeItem(this)">
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="checkout">
+
+        <h2 id="grandTotal">
+            Grand Total: $2398
+        </h2>
+
+        <button class="btn" onclick="window.open('checkout.html', '_blank')">Proceed to Checkout</button>
+        </button>
+
+    </section>
+

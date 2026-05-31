@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <h1 class="logo">ShoppingStop</h1>
+            <div class="top-links">
+
+    <a href="register.html" target="_blank">
+        Register
+    </a>
+
+    <a href="login.html" target="_blank">
+        Login
+    </a>
+
+    <a href="wishlist.html" target="_blank">
+        Wishlist (0)
+    </a>
+
+    <a href="cart.html" target="_blank">
+        Shopping cart (0)
+    </a>
+</div>   
+        </div>
+
+        <div class="search-box">
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search store">
+
+    <button onclick="searchItem()">
+        SEARCH
+    </button>
+
+</div>
+
+       <nav>
+
+    <ul class="navbar">
+
+        <li class="dropdown">
+        <a href="#">Shoes</a>
+        <ul class="dropdown-menu">
+        <li>
+         <a href="nike.html" target="_blank">
+        Nike
+        </a>
+        </li>
+        <li>
+        <a href="puma.html" target="_blank">
+        Puma
+        </a>
+        </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Electronics</a>
+            <ul class="dropdown-menu">
+            <li>
+            <a href="laptop.html" target="_blank">
+            Laptop
+            </a>
+                </li>
+             <li>
+            <a href="headphone.html" target="_blank">
+            Headphones
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Smart Phone</a>
+            <ul class="dropdown-menu">
+            <li>
+            <a href="iphone.html" target="_blank">
+            iPhone
+                    </a>
+                </li>
+                <li>
+            <a href="sam.html" target="_blank">
+            Samsung
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </header>
+
+    <section class="hero">
+
+    <div class="banner">
+        <h1>Galaxy S24</h1>
+
+        <p>
+            Step up your tech game with Samsung Galaxy S24.
+        </p>
+
+        <button onclick="window.open('sam.html','_blank')">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="banner">
+
+        <h1>iPhone 17 Pro</h1>
+
+        <p>
+            Exceptional performance. New Center Stage front camera.
+            Ultimate pro camera system.
+        </p>
+
+        <button onclick="window.open('iphone.html','_blank')">
+            Learn More
+        </button>
+
+    </div>
+
+</section>
+
+    <section class="welcome">
+        <h2>Welcome to our store</h2>
+        <p>
+            Online shopping is the process consumers go through to purchase products.
+        </p>
+    </section>
+
+    <div class="category-container">
+    <a href="elec.html" class="category-link">
+
+        <div class="category-card">
+            <img src="electronics.jpg" alt="">
+            <h2>Electronics</h2>
+        </div>
+    </a>
+    <a href="shoes.html" class="category-link">
+
+        <div class="category-card">
+            <img src="shoes.jpg" alt="">
+            <h2>Shoes</h2>
+        </div>
+
+    </a>
+    <a href="smart.html" class="category-link">
+
+        <div class="category-card">
+            <img src="phone.jpg" alt="">
+            <h2>Smart Phone</h2>
+        </div>
+
+    </a>
+
+</div>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+           <div class="product-card">
+    <img src="iphone.webp" alt="">
+    <h2>iPhone 17Pro</h2>
+    <p>$1,099</p>
+    <button onclick="window.location.href='cart.html'">
+        Add to Cart
+    </button>
+</div>
+
+ <div class="product-card">
+    <img src="hp lap.webp" alt="">
+    <h2>HP Victus Gaming Laptop</h2>
+    <p>$1,299</p>
+    <button onclick="window.location.href='cart.html'">
+        Add to Cart
+    </button>
+</div>
+</div>
+        </div>
+    </section>
+
+    <section class="news-section">
+
+    <h1>News</h1>
+
+    <div class="news-container">
+
+        <div class="news-card">
+
+            <h2>About ShoppingStop</h2>
+
+            <p>
+                Handpicked Quality: Every item in our catalog undergoes
+                rigorous quality checks before it reaches your doorstep.
+            </p>
+
+            <button onclick="window.open('aboutus.html','_blank')">
+                Details
+            </button>
+
+        </div>
+
+</section>
+
+    <section class="poll">
+
+    <h1>Community Poll</h1>
+
+    <p>Do You Like ShoppingStop?</p>
+
+    <div class="poll-options">
+
+        <label>
+            <input type="radio" name="vote" value="Excellent">
+            Excellent
+        </label>
+
+        <label>
+            <input type="radio" name="vote" value="Good">
+            Good
+        </label>
+
+        <label>
+            <input type="radio" name="vote" value="Poor">
+            Poor
+        </label>
+
+        <label>
+            <input type="radio" name="vote" value="Very bad">
+            Very bad
+        </label>
+
+    </div>
+
+    <button onclick="submitVote()">
+        VOTE
+    </button>
+
+    <h3 id="result"></h3>
+
+</section>
+    <footer>
+
+        <footer>
+
+    <footer>
+  <div class="footer-grid">
+
+    <div>
+      <h4>Information</h4>
+      <ul>
+        <li><a href="shipping.html" target="_blank">Shipping & Returns</a></li>
+        <li><a href="aboutus.html"              target="_blank">About Us</a></li>
+        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>My Account</h4>
+      <ul>
+        <li><a href="register.html"  target="_blank">My Account</a></li>
+        <li><a href="cart.html"      target="_blank">Orders</a></li>
+        <li><a href="register.html"  target="_blank">Addresses</a></li>
+        <li><a href="wishlist.html"  target="_blank">Wishlist</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 ShoppingStop. All rights reserved.
+  </div>
+</footer>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    </footer>
+
+</body>
+</html>

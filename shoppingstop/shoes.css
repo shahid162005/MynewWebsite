@@ -1,0 +1,21 @@
+*{
+    margin:auto;
+    padding:0;
+    box-sizing:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+header h1{
+
+    font-size:40px;
+}
